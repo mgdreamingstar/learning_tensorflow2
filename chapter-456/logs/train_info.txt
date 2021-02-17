@@ -1,1 +1,61 @@
-python: can't open file 'keras-retinanet/keras_retinanet/bin/train.py': [Errno 2] No such file or directory
+2020-07-28 09:21:29.274286: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-07-28 09:21:29.300845: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: GeForce RTX 2070 computeCapability: 7.5
+coreClock: 1.62GHz coreCount: 36 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2020-07-28 09:21:29.301054: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-07-28 09:21:29.302472: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-07-28 09:21:29.303826: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-07-28 09:21:29.304044: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-07-28 09:21:29.305505: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-07-28 09:21:29.306323: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-07-28 09:21:29.309533: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-07-28 09:21:29.310520: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-07-28 09:21:29.310787: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-07-28 09:21:29.335766: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 3199830000 Hz
+2020-07-28 09:21:29.337533: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562837517690 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-07-28 09:21:29.337576: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-07-28 09:21:29.338778: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: GeForce RTX 2070 computeCapability: 7.5
+coreClock: 1.62GHz coreCount: 36 deviceMemorySize: 7.79GiB deviceMemoryBandwidth: 417.29GiB/s
+2020-07-28 09:21:29.338840: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-07-28 09:21:29.338876: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-07-28 09:21:29.338907: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-07-28 09:21:29.338937: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-07-28 09:21:29.338967: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-07-28 09:21:29.338998: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-07-28 09:21:29.339028: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-07-28 09:21:29.341086: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-07-28 09:21:29.341163: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-07-28 09:21:29.511653: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-28 09:21:29.511696: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2020-07-28 09:21:29.511705: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2020-07-28 09:21:29.513201: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7269 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2070, pci bus id: 0000:02:00.0, compute capability: 7.5)
+2020-07-28 09:21:29.514794: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56283b2820f0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-07-28 09:21:29.514813: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2070, Compute Capability 7.5
+Creating model, this may take a second...
+Traceback (most recent call last):
+  File "keras-retinanet/keras_retinanet/bin/train.py", line 547, in <module>
+    main()
+  File "keras-retinanet/keras_retinanet/bin/train.py", line 507, in main
+    config=args.config
+  File "keras-retinanet/keras_retinanet/bin/train.py", line 117, in create_models
+    model          = model_with_weights(backbone_retinanet(num_classes, num_anchors=num_anchors, modifier=modifier, pyramid_levels=pyramid_levels), weights=weights, skip_mismatch=True)
+  File "keras-retinanet/keras_retinanet/bin/../../keras_retinanet/models/resnet.py", line 38, in retinanet
+    return resnet_retinanet(*args, backbone=self.backbone, **kwargs)
+  File "keras-retinanet/keras_retinanet/bin/../../keras_retinanet/models/resnet.py", line 99, in resnet_retinanet
+    resnet = keras_resnet.models.ResNet50(inputs, include_top=False, freeze_bn=True)
+  File "/home/ysdz/anaconda3/envs/new3/lib/python3.6/site-packages/keras_resnet/models/_2d.py", line 188, in ResNet50
+    return ResNet(inputs, blocks, numerical_names=numerical_names, block=keras_resnet.blocks.bottleneck_2d, include_top=include_top, classes=classes, *args, **kwargs)
+  File "/home/ysdz/anaconda3/envs/new3/lib/python3.6/site-packages/keras_resnet/models/_2d.py", line 66, in ResNet
+    x = keras_resnet.layers.BatchNormalization(axis=axis, epsilon=1e-5, freeze=freeze_bn, name="bn_conv1")(x)
+  File "/home/ysdz/anaconda3/envs/new3/lib/python3.6/site-packages/tensorflow/python/keras/engine/base_layer.py", line 922, in __call__
+    outputs = call_fn(cast_inputs, *args, **kwargs)
+  File "/home/ysdz/anaconda3/envs/new3/lib/python3.6/site-packages/tensorflow/python/autograph/impl/api.py", line 265, in wrapper
+    raise e.ag_error_metadata.to_exception(e)
+TypeError: in user code:
+
+    /home/ysdz/anaconda3/envs/new3/lib/python3.6/site-packages/keras_resnet/layers/_batch_normalization.py:17 call  *
+        return super(BatchNormalization, self).call(training=(not self.freeze), *args, **kwargs)
+
+    TypeError: type object got multiple values for keyword argument 'training'
+

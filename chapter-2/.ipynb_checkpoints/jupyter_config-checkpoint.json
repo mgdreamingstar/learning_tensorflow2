@@ -1,0 +1,10 @@
+{
+  "NotebookAPP":{
+    "ip": "*",
+    "port": 8888,
+    "password": "",
+    "open_browser": true,
+    "token": "",
+    "allow_root": true
+  }
+}
